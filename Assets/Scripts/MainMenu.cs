@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour {
 	void OnGUI()
 	{
 		GUI.skin = skin;
-		GUI.Label (new Rect(10,10, 400,75), "Noah's Maze Game");
+		GUI.Label (new Rect(10,10, 400,75), "Gorgons Labyrinth");
 		if (PlayerPrefs.GetInt("Level Completed") > 0)
 		{
 

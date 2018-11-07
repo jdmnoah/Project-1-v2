@@ -27,11 +27,11 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			GetComponent<Rigidbody>().AddRelativeForce(input * moveSpeed);
 		}
-        /* @TYLER! I'm taking this out temporarily
+
 		if (transform.position.y < -2)
 		{
 			Die ();
-		}*/
+		}
 	}
 
 	void OnCollisionEnter(Collision other)

@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour {
 
 	void LoadNextLevel()
 	{
-		if (currentLevel < 3)
+		if (currentLevel < 4)
 		{
 			currentLevel += 1;
 			print (currentLevel);
@@ -123,19 +123,19 @@ public class GameManager : MonoBehaviour {
 		        
 
 
-			if(currentLevel == 3)
+			if(currentLevel == 4)
 			{
 			GUI.Label(new Rect(winScreenRect.x + 20, winScreenRect.y + 40, 300, 50), currentScore.ToString() + 
 			          " Score" );
 
-			GUI.Label(new Rect(winScreenRect.x + 20, winScreenRect.y + 70, 300, 50), "CONGRATULATIONS YOU WIN!!!");
+			GUI.Label(new Rect(winScreenRect.x + 20, winScreenRect.y + 70, 300, 50), "CONGRADULATIONS YOU WINNN!!");
 			}
 			else
 			{
 				GUI.Label(new Rect(winScreenRect.x + 20, winScreenRect.y + 40, 300, 50), currentScore.ToString() + 
 				          " Score" );
 				
-				GUI.Label(new Rect(winScreenRect.x + 20, winScreenRect.y + 70, 300, 50), "Completed Level  "+currentLevel);
+				GUI.Label(new Rect(winScreenRect.x + 20, winScreenRect.y + 70, 300, 50), "Compleated Level  "+currentLevel);
 			}
 
 		}
